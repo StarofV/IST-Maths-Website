@@ -4,7 +4,8 @@
   "description": "A website being built for an assignment",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.2"
+    "connect": "^3.6.6",
+    "serve-static": "^1.13.2"
   },
   "devDependencies": {},
   "scripts": {
