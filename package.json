@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "connect": "^3.6.6",
+    "jquery": "^3.3.1",
     "serve-static": "^1.13.2"
   },
   "devDependencies": {},
