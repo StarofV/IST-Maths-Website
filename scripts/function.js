@@ -66,6 +66,7 @@ function addition(){
         },
     ];
     
+    document.getElementById('output').innerHTML = questions[questionsAnswered].question;
 }
 //A function that uses the jquery show and hide functions
 function showHide(Area, duration){      //Area is a string and Duration is a integer
