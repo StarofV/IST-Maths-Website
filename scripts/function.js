@@ -18,6 +18,9 @@ function nameGrab(){
     showHide('#choices', 500);
 }
 function addition(){
+    var no1 = Math.round((Math.random()*100)+1)
+    var no2 = Math.round((Math.random()*100)+1)
+    RandomQuestion = no1 +" + "+no2;
     questions = [ //An array filled with objects. Each object is a question with a string and a question
         question1 = {
             question: "1 + 1",
@@ -66,7 +69,52 @@ function addition(){
         },
     ];
     
-    document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+    if(questionsAnswered === 0){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 1){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 2){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 3){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 4){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 5){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 6){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 7){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 8){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else if(questionsAnswered === 9){
+        document.getElementById('output').innerHTML = questions[questionsAnswered].question;
+        questionsAnswered++;
+    }
+    else{
+        console.log(RandomQuestion);
+        document.getElementById('output').innerHTML = RandomQuestion;
+    }
+    
+        
 }
 //A function that uses the jquery show and hide functions
 function showHide(Area, duration){      //Area is a string and Duration is a integer
